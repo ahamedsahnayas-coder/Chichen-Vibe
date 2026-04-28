@@ -1,0 +1,282 @@
+<!-- index.html -->
+ 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chichen Vibe — Accueil</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       HEADER (commun à toutes les pages)
+  ══════════════════════════════════════════ -->
+  <header>
+
+    <!-- Logo -->
+    <a href="index.html" class="logo" aria-label="Chichen Vibe - Accueil">
+      <span class="logo-icon">🏛️</span>
+      <div class="logo-text">
+        CHICHEN
+        <span>VIBE</span>
+      </div>
+    </a>
+
+    <!-- Navigation principale (7 liens — toutes les pages) -->
+    <nav id="main-nav" role="navigation" aria-label="Navigation principale">
+      <a href="index.html"    class="active">Accueil</a>
+      <a href="histoire.html"              >Histoire</a>
+      <a href="monuments.html"             >Monuments</a>
+      <a href="unesco.html"                >UNESCO</a>
+      <a href="parcours.html"              >Parcours</a>
+      <a href="galerie.html"               >Galerie</a>
+      <a href="acces.html"                 >Accès</a>
+    </nav>
+
+    <!-- Sélecteur de langue + bouton hamburger (mobile) -->
+    <div style="display:flex; align-items:center; gap:1rem;">
+      <div class="lang-switcher" aria-label="Sélection de la langue">
+        <span class="lang-globe">🌐</span>
+        <button class="lang-btn active" aria-pressed="true">FR</button>
+        <button class="lang-btn"        aria-pressed="false">EN</button>
+      </div>
+      <button
+        class="hamburger"
+        id="hamburger-btn"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       MAIN — PAGE ACCUEIL
+  ══════════════════════════════════════════ -->
+  <main>
+
+    <!-- HERO ───────────────────────────────────
+         Image de fond : images/castillo.jpg
+    ─────────────────────────────────────────── -->
+    <section class="hero" aria-label="Section hero Chichen Vibe">
+
+      <!-- Image de fond principale -->
+      <div
+        class="hero-bg"
+        role="img"
+        aria-label="Vue de la pyramide El Castillo à Chichén Itzá"
+        style="background-image: url('images/castillo.jpg');"
+      ></div>
+
+      <!-- Contenu centré du hero -->
+      <div class="hero-content">
+
+        <!-- Badge UNESCO / Merveille du Monde -->
+        <div class="hero-badge" role="note">
+          UNESCO WORLD HERITAGE SITE &nbsp;•&nbsp; MERVEILLE DU MONDE
+        </div>
+
+        <!-- Titre principal -->
+        <h1 class="hero-title">Chichen Vibe</h1>
+
+        <!-- Séparateur doré -->
+        <div class="hero-divider" aria-hidden="true"></div>
+
+        <!-- Sous-titre -->
+        <p class="hero-subtitle">Explorez l'âme de Chichén Itzá</p>
+
+        <!-- Métadonnées : localisation + période -->
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <span class="icon" aria-hidden="true">📍</span>
+            Yucatán, México
+          </div>
+          <div class="hero-meta-item">
+            <span class="icon" aria-hidden="true">🗓️</span>
+            600-1200 AD
+          </div>
+        </div>
+
+        <!-- Bouton Site Officiel -->
+        <a
+          href="https://whc.unesco.org/fr/list/483/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-btn"
+          aria-label="Ouvrir le site officiel UNESCO de Chichén Itzá (nouvelle fenêtre)"
+        >
+          Site Officiel
+          <span aria-hidden="true">↗</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER (commun à toutes les pages)
+  ══════════════════════════════════════════ -->
+  <footer role="contentinfo">
+
+    <div class="footer-top">
+
+      <!-- Colonne 1 : Marque + réseaux sociaux -->
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="Chichen Vibe - Accueil">
+          <span class="logo-icon">🏛️</span>
+          <div class="logo-text">
+            CHICHEN
+            <span>VIBE</span>
+          </div>
+        </a>
+        <p class="tagline">Explorez l'âme de Chichén Itzá</p>
+
+        <!-- Réseaux sociaux — logos PNG -->
+        <div class="social-links" aria-label="Réseaux sociaux">
+          <a
+            href="https://www.facebook.com/share/1HP4RdVbp3/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            title="Facebook"
+          >
+            <img src="images/facebook.png" alt="Facebook" />
+          </a>
+          <a
+            href="https://www.tiktok.com/@chichenvibe?_r=1&_t=ZN-95t2irMStcJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok"
+            title="TikTok"
+          >
+            <img src="images/tiktok.png" alt="TikTok" />
+          </a>
+          <a
+            href="https://www.instagram.com/chichenvibe?utm_source=qr&igsh=MXkybmg1bXA3Mm9oYw=="
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            title="Instagram"
+          >
+            <img src="images/instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Colonne 2 : Navigation -->
+      <nav class="footer-nav" aria-label="Navigation secondaire">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="monuments.html">Monuments</a></li>
+          <li><a href="unesco.html">UNESCO</a></li>
+          <li><a href="parcours.html">Parcours</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+        </ul>
+      </nav>
+
+      <!-- Colonne 3 : Localisation -->
+      <div class="footer-location">
+        <h4>Localisation</h4>
+        <address>Chichén Itzá, Yucatán, Mexique</address>
+        <a
+          href="https://maps.google.com/?q=Chichen+Itza"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="map-link"
+          aria-label="Voir Chichén Itzá sur Google Maps (nouvelle fenêtre)"
+        >
+          📍 Yucatán, Mexique
+        </a>
+      </div>
+
+    </div><!-- /footer-top -->
+
+    <!-- Bas du footer -->
+    <div class="footer-bottom">
+
+      <p class="footer-copy">
+        © 2026 Chichen Vibe &nbsp;•&nbsp;
+        <span class="heritage">Patrimoine Mondial de l'Humanité</span>
+      </p>
+
+      <p class="footer-unesco-text">
+        En partenariat avec l'UNESCO pour la préservation du patrimoine mondial.
+        Chichén Itzá, l'une des 7 nouvelles merveilles du monde.
+      </p>
+
+      <!-- Badges UNESCO + New Wonder -->
+      <div class="footer-badges">
+        <span class="badge badge-blue">UNESCO World Heritage</span>
+        <span class="badge badge-gold">New Wonder of the World</span>
+      </div>
+
+      <!-- Logo MCN -->
+      <div class="mcn-logo" aria-label="Logo Médiation Culturelle et Numérique">
+        <img
+          src="images/MCN.jpg"
+          alt="Logo M.C.N. — Médiation Culturelle et Numérique"
+          class="mcn-img"
+        />
+      </div>
+
+    </div><!-- /footer-bottom -->
+
+  </footer>
+
+  <!-- Bouton retour en haut de page -->
+  <button
+    class="scroll-top"
+    id="scroll-top-btn"
+    aria-label="Retour en haut de page"
+    title="Retour en haut"
+  >
+    ↑
+  </button>
+
+  <!-- ══════════════════════════════════════════
+       JAVASCRIPT
+  ══════════════════════════════════════════ -->
+  <script>
+
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mainNav      = document.getElementById('main-nav');
+
+    hamburgerBtn.addEventListener('click', () => {
+      const isOpen = mainNav.classList.toggle('open');
+      hamburgerBtn.classList.toggle('is-open', isOpen);
+      hamburgerBtn.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!hamburgerBtn.contains(e.target) && !mainNav.contains(e.target)) {
+        mainNav.classList.remove('open');
+        hamburgerBtn.classList.remove('is-open');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    const scrollTopBtn = document.getElementById('scroll-top-btn');
+
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+  </script>
+
+</body>
+</html>
