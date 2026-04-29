@@ -1,0 +1,693 @@
+<!-- histoire.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chichen Vibe — Histoire</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       HEADER (commun à toutes les pages)
+  ══════════════════════════════════════════ -->
+  <header>
+
+    <a href="index.html" class="logo" aria-label="Chichen Vibe - Accueil">
+      <span class="logo-icon">🏛️</span>
+      <div class="logo-text">
+        CHICHEN
+        <span>VIBE</span>
+      </div>
+    </a>
+
+    <nav id="main-nav" aria-label="Navigation principale">
+      <a href="index.html"                         >Accueil</a>
+      <a href="histoire.html"   class="active"     >Histoire</a>
+      <a href="monuments.html"                     >Monuments</a>
+      <a href="unesco.html"                        >UNESCO</a>
+      <a href="parcours.html"                      >Parcours</a>
+      <a href="galerie.html"                       >Galerie</a>
+      <a href="acces.html"                         >Accès</a>
+    </nav>
+
+    <div style="display:flex; align-items:center; gap:1rem;">
+      <div class="lang-switcher">
+        <span class="lang-globe">🌐</span>
+        <button class="lang-btn active" aria-pressed="true">FR</button>
+        <button class="lang-btn"        aria-pressed="false">EN</button>
+      </div>
+      <button
+        class="hamburger"
+        id="hamburger-btn"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       MAIN — PAGE HISTOIRE
+  ══════════════════════════════════════════ -->
+  <main>
+
+    <section class="histoire-hero" aria-labelledby="histoire-titre">
+      <div class="histoire-hero-inner">
+
+        <div class="section-label" aria-hidden="true">
+          🗓️ &nbsp; 600-1200 AD
+        </div>
+
+        <h1 id="histoire-titre">Histoire de Chichén Itzá</h1>
+
+        <div class="histoire-divider" aria-hidden="true"></div>
+
+        <p>
+          Chichén Itzá est l'un des sites archéologiques les plus emblématiques
+          de la civilisation maya, situé dans la péninsule du Yucatán au Mexique.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         PARTIE 1 — 4 BLOCS THÉMATIQUES
+    ══════════════════════════════════════════ -->
+    <section class="histoire-cards-section" aria-label="Thèmes historiques">
+
+      <div class="cards-grid">
+
+        <!-- CARTE 1 -->
+        <article class="histoire-card">
+          <div class="card-img-wrap">
+            <img src="images/civilisation.jpg" alt="Représentation de la civilisation maya — sculptures et architecture" loading="lazy">
+            <div class="card-icon-badge" aria-hidden="true">👥</div>
+          </div>
+          <div class="card-body">
+            <h2>La Civilisation Maya</h2>
+            <p>Fondée vers 600 après J.-C., Chichén Itzá était une cité maya puissante qui combinait architecture, astronomie et spiritualité…</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn-text" onclick="openModal('modal-civ')" aria-haspopup="dialog" aria-controls="modal-civ">
+              EN SAVOIR PLUS &nbsp; ›
+            </button>
+          </div>
+        </article>
+
+        <!-- CARTE 2 -->
+        <article class="histoire-card">
+          <div class="card-img-wrap">
+            <img src="images/religieux.jpg" alt="Temples mayas dédiés aux dieux — rôle religieux et astronomique" loading="lazy">
+            <div class="card-icon-badge" aria-hidden="true">✨</div>
+          </div>
+          <div class="card-body">
+            <h2>Rôle Religieux et Astronomique</h2>
+            <p>Le site servait de centre religieux majeur avec des temples dédiés aux dieux mayas. Les Mayas utilisaient leurs constructions pour observer les équinoxes et solstices…</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn-text" onclick="openModal('modal-relig')" aria-haspopup="dialog" aria-controls="modal-relig">
+              EN SAVOIR PLUS &nbsp; ›
+            </button>
+          </div>
+        </article>
+
+        <!-- CARTE 3 -->
+        <article class="histoire-card">
+          <div class="card-img-wrap">
+            <img src="images/politique.jpg" alt="Chichén Itzá, centre politique et économique du Yucatán" loading="lazy">
+            <div class="card-icon-badge" aria-hidden="true">📋</div>
+          </div>
+          <div class="card-body">
+            <h2>Centre Politique</h2>
+            <p>Entre le Xe et le XIIe siècle, Chichén Itzá était l'une des plus grandes villes de la région, servant de centre politique et économique majeur…</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn-text" onclick="openModal('modal-polit')" aria-haspopup="dialog" aria-controls="modal-polit">
+              EN SAVOIR PLUS &nbsp; ›
+            </button>
+          </div>
+        </article>
+
+        <!-- CARTE 4 -->
+        <article class="histoire-card">
+          <div class="card-img-wrap">
+            <img src="images/construction.jpg" alt="Phases de construction de Chichén Itzá — styles maya et toltèque" loading="lazy">
+            <div class="card-icon-badge" aria-hidden="true">🗓️</div>
+          </div>
+          <div class="card-body">
+            <h2>Périodes de Construction</h2>
+            <p>La construction s'est déroulée en plusieurs phases, mélangeant les styles architecturaux maya et toltèque, créant un site unique…</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn-text" onclick="openModal('modal-const')" aria-haspopup="dialog" aria-controls="modal-const">
+              EN SAVOIR PLUS &nbsp; ›
+            </button>
+          </div>
+        </article>
+
+      </div><!-- /cards-grid -->
+
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         PARTIE 2 — CHRONOLOGIE COMPLÈTE (7 cartes)
+    ══════════════════════════════════════════ -->
+    <section class="chronologie-section" aria-labelledby="chron-titre">
+
+      <div class="chronologie-header">
+        <div class="section-label" aria-hidden="true">📋 &nbsp; CHRONOLOGIE COMPLÈTE</div>
+        <span class="emoji" aria-hidden="true">🏛️</span>
+        <h2 id="chron-titre">L'Épopée de Chichén Itzá</h2>
+        <div class="chron-divider" aria-hidden="true"></div>
+        <p>Suivez le serpent à plumes Kukulcán à travers 1600 ans d'histoire</p>
+      </div>
+
+      <div class="timeline" role="list" aria-label="Chronologie de Chichén Itzá">
+
+        <!-- ENTRÉE 1 — DROITE -->
+        <div class="timeline-entry timeline-right" role="listitem">
+          <div class="timeline-dot" aria-hidden="true">1</div>
+          <div class="timeline-spacer"></div>
+          <article class="timeline-card">
+            <div class="timeline-card-body">
+              <div class="timeline-date-badge">🗓️ &nbsp; 400 – 700 AP. J.-C.</div>
+              <h3>La Fondation et l'Héritage Maya</h3>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Cénotes sacrés</span>
+                <span class="timeline-tag">Style Puuc</span>
+                <span class="timeline-tag">Dieu Chaac</span>
+              </div>
+              <p class="excerpt">Avant d'être une métropole, le site était un lieu sacré pour les agriculteurs locaux.</p>
+              <div class="timeline-full-content" aria-hidden="true">
+                <div class="full-block">
+                  <div class="full-block-title">🏞️ Le choix du site</div>
+                  <p>Contrairement aux autres cités mayas, Chichén Itzá n'est pas située près d'une montagne. Son emplacement est stratégique grâce aux cénotes, ces puits naturels qui permettaient de survivre dans une région sans rivières.</p>
+                </div>
+                <div class="full-block">
+                  <div class="full-block-title">🏗️ Style "Vieille Chichén"</div>
+                  <p>Les bâtiments de cette époque (comme l'église ou le temple des panneaux) arborent le style Puuc, célèbre pour ses masques du dieu de la pluie, Chaac, reconnaissable à son nez en forme de trompe.</p>
+                </div>
+              </div>
+              <button class="btn-lire" onclick="toggleExpand(this)" aria-expanded="false">Lire la suite ↓</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- ENTRÉE 2 — GAUCHE -->
+        <div class="timeline-entry timeline-left" role="listitem">
+          <div class="timeline-dot" aria-hidden="true">2</div>
+          <article class="timeline-card">
+            <div class="timeline-card-body">
+              <div class="timeline-date-badge">🗓️ &nbsp; 700 – 900 AP. J.-C.</div>
+              <h3>L'Âge d'Or de l'Astronomie et des Sciences</h3>
+              <div class="timeline-tags">
+                <span class="timeline-tag">El Caracol</span>
+                <span class="timeline-tag">Cycles de Vénus</span>
+                <span class="timeline-tag">Astronomie précise</span>
+              </div>
+              <p class="excerpt">La ville devient le "cerveau" du Yucatan.</p>
+              <div class="timeline-full-content" aria-hidden="true">
+                <div class="full-block">
+                  <div class="full-block-title">🔭 L'Observatoire (El Caracol)</div>
+                  <p>Les Mayas y étudiaient les cycles de Vénus avec une précision chirurgicale. Les fenêtres de la tour ronde sont alignées sur les positions extrêmes de la planète et les solstices.</p>
+                </div>
+                <div class="full-block">
+                  <div class="full-block-title">🌟 Urbanisme sacré</div>
+                  <p>La ville commence à s'organiser autour d'axes précis alignés sur les astres, prouvant une maîtrise parfaite des mathématiques et de la géométrie.</p>
+                </div>
+              </div>
+              <button class="btn-lire" onclick="toggleExpand(this)" aria-expanded="false">Lire la suite ↓</button>
+            </div>
+          </article>
+          <div class="timeline-spacer"></div>
+        </div>
+
+        <!-- ENTRÉE 3 — DROITE -->
+        <div class="timeline-entry timeline-right" role="listitem">
+          <div class="timeline-dot" aria-hidden="true">3</div>
+          <div class="timeline-spacer"></div>
+          <article class="timeline-card">
+            <div class="timeline-card-body">
+              <div class="timeline-date-badge">🗓️ &nbsp; 900 – 1050 AP. J.-C.</div>
+              <h3>L'Invasion et la Fusion Toltèque</h3>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Fusion Toltèque</span>
+                <span class="timeline-tag">Mille Colonnes</span>
+                <span class="timeline-tag">Chac Mool</span>
+              </div>
+              <p class="excerpt">C'est le tournant historique majeur qui donne au site son aspect actuel.</p>
+              <div class="timeline-full-content" aria-hidden="true">
+                <div class="full-block">
+                  <div class="full-block-title">⚔️ L'arrivée de Kukulcán</div>
+                  <p>Le peuple Toltèque, venu du centre du Mexique, apporte une culture plus guerrière. C'est la naissance d'un style hybride unique au monde : le Maya-Toltèque.</p>
+                </div>
+                <div class="full-block">
+                  <div class="full-block-title">🏛️ Le Temple des Guerriers</div>
+                  <p>Entouré de la structure des "Mille Colonnes", ce temple rend hommage aux ordres militaires des Aigles et des Jaguars. On y trouve les célèbres statues Chac Mool, des figures de pierre tenant un plateau pour recevoir les offrandes.</p>
+                </div>
+              </div>
+              <button class="btn-lire" onclick="toggleExpand(this)" aria-expanded="false">Lire la suite ↓</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- ENTRÉE 4 — GAUCHE -->
+        <div class="timeline-entry timeline-left" role="listitem">
+          <div class="timeline-dot" aria-hidden="true">4</div>
+          <article class="timeline-card">
+            <div class="timeline-card-body">
+              <div class="timeline-date-badge">🗓️ &nbsp; 1050 – 1200 AP. J.-C.</div>
+              <h3>L'Apogée de la Puissance</h3>
+              <div class="timeline-tags">
+                <span class="timeline-tag">El Castillo</span>
+                <span class="timeline-tag">Équinoxes</span>
+                <span class="timeline-tag">168m de long</span>
+              </div>
+              <p class="excerpt">Chichén Itzá devient la capitale économique et religieuse de toute la région.</p>
+              <div class="timeline-full-content" aria-hidden="true">
+                <div class="full-block">
+                  <div class="full-block-title">🐍 El Castillo (La Pyramide de Kukulcán)</div>
+                  <p>Ce monument est un véritable calendrier de pierre. Sa conception permet le fameux phénomène de l'ombre portée mimant la descente du serpent lors des équinoxes.</p>
+                </div>
+                <div class="full-block">
+                  <div class="full-block-title">⚽ Le Grand Jeu de Balle</div>
+                  <p>Le plus grand terrain de Mésoamérique (168 mètres de long). Plus qu'un sport, c'était un rituel politique et religieux où le capitaine de l'équipe pouvait être sacrifié pour assurer la fertilité de la terre.</p>
+                </div>
+              </div>
+              <button class="btn-lire" onclick="toggleExpand(this)" aria-expanded="false">Lire la suite ↓</button>
+            </div>
+          </article>
+          <div class="timeline-spacer"></div>
+        </div>
+
+        <!-- ENTRÉE 5 — DROITE -->
+        <div class="timeline-entry timeline-right" role="listitem">
+          <div class="timeline-dot" aria-hidden="true">5</div>
+          <div class="timeline-spacer"></div>
+          <article class="timeline-card">
+            <div class="timeline-card-body">
+              <div class="timeline-date-badge">🗓️ &nbsp; 1200 – 1520 AP. J.-C.</div>
+              <h3>Le Déclin et la Cité des Ombres</h3>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Guerre civile 1221</span>
+                <span class="timeline-tag">Cénote Sacré</span>
+                <span class="timeline-tag">Or et jade</span>
+              </div>
+              <p class="excerpt">Pourquoi une telle puissance s'est-elle éteinte ?</p>
+              <div class="timeline-full-content" aria-hidden="true">
+                <div class="full-block">
+                  <div class="full-block-title">⚔️ Le transfert de pouvoir</div>
+                  <p>Vers 1221, une guerre civile éclate. Le centre de pouvoir se déplace vers Mayapán.</p>
+                </div>
+                <div class="full-block">
+                  <div class="full-block-title">🙏 Lieu de Pèlerinage</div>
+                  <p>Bien que la ville soit partiellement abandonnée, elle ne meurt pas tout à fait. Elle reste un lieu de pèlerinage majeur. On venait de tout le Mexique pour jeter de l'or, du jade et des objets précieux dans le Cénote Sacré pour apaiser les dieux.</p>
+                </div>
+              </div>
+              <button class="btn-lire" onclick="toggleExpand(this)" aria-expanded="false">Lire la suite ↓</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- ENTRÉE 6 — GAUCHE -->
+        <div class="timeline-entry timeline-left" role="listitem">
+          <div class="timeline-dot" aria-hidden="true">6</div>
+          <article class="timeline-card">
+            <div class="timeline-card-body">
+              <div class="timeline-date-badge">🗓️ &nbsp; 1520 – 1840 AP. J.-C.</div>
+              <h3>La Conquête Espagnole et l'Oubli</h3>
+              <div class="timeline-tags">
+                <span class="timeline-tag">1532 – Montejo</span>
+                <span class="timeline-tag">300 ans d'oubli</span>
+                <span class="timeline-tag">Résistance maya</span>
+              </div>
+              <p class="excerpt">L'arrivée des Conquistadors change à jamais le destin du site.</p>
+              <div class="timeline-full-content" aria-hidden="true">
+                <div class="full-block">
+                  <div class="full-block-title">⚔️ L'arrivée des Conquistadors</div>
+                  <p>Francisco de Montejo tente d'établir une capitale espagnole sur le site en 1532, mais la résistance maya locale l'oblige à fuir après quelques mois.</p>
+                </div>
+                <div class="full-block">
+                  <div class="full-block-title">🌿 Le silence de la jungle</div>
+                  <p>Pendant près de trois siècles, les temples disparaissent sous une végétation dense, devenant une légende connue seulement des populations locales.</p>
+                </div>
+              </div>
+              <button class="btn-lire" onclick="toggleExpand(this)" aria-expanded="false">Lire la suite ↓</button>
+            </div>
+          </article>
+          <div class="timeline-spacer"></div>
+        </div>
+
+        <!-- ENTRÉE 7 — DROITE -->
+        <div class="timeline-entry timeline-right" role="listitem">
+          <div class="timeline-dot" aria-hidden="true">7</div>
+          <div class="timeline-spacer"></div>
+          <article class="timeline-card">
+            <div class="timeline-card-body">
+              <div class="timeline-date-badge">🗓️ &nbsp; 1840 – Aujourd'hui</div>
+              <h3>La Renaissance Moderne et la 7ème Merveille</h3>
+              <div class="timeline-tags">
+                <span class="timeline-tag">UNESCO 1988</span>
+                <span class="timeline-tag">7 Merveilles 2007</span>
+                <span class="timeline-tag">2ème site du Mexique</span>
+              </div>
+              <p class="excerpt">La redécouverte mondiale d'un joyau de l'humanité.</p>
+              <div class="timeline-full-content" aria-hidden="true">
+                <div class="full-block">
+                  <div class="full-block-title">🔍 La redécouverte</div>
+                  <p>En 1841, l'explorateur John Lloyd Stephens publie des récits qui fascinent le monde. En 1923, la Carnegie Institution lance les premières grandes fouilles et restaurations.</p>
+                </div>
+                <div class="full-block">
+                  <div class="full-block-title">🌍 Consécration mondiale</div>
+                  <p>
+                    <strong>1988 :</strong> Patrimoine Mondial de l'UNESCO.<br>
+                    <strong>2007 :</strong> Élue l'une des 7 Nouvelles Merveilles du Monde par plus de 100 millions de personnes.<br>
+                    <strong>Aujourd'hui :</strong> C'est le 2ème site archéologique le plus visité du Mexique, attirant des voyageurs du monde entier pour son mystère et son énergie unique.
+                  </p>
+                </div>
+              </div>
+              <button class="btn-lire" onclick="toggleExpand(this)" aria-expanded="false">Lire la suite ↓</button>
+            </div>
+          </article>
+        </div>
+
+      </div><!-- /timeline -->
+
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER (commun à toutes les pages)
+  ══════════════════════════════════════════ -->
+  <footer>
+
+    <div class="footer-top">
+
+      <!-- Colonne 1 : Marque + réseaux sociaux -->
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="Chichen Vibe - Accueil">
+          <span class="logo-icon">🏛️</span>
+          <div class="logo-text">
+            CHICHEN
+            <span>VIBE</span>
+          </div>
+        </a>
+        <p class="tagline">Explorez l'âme de Chichén Itzá</p>
+
+        <!-- Réseaux sociaux — logos PNG -->
+        <nav class="social-links" aria-label="Réseaux sociaux">
+          <a
+            href="https://www.facebook.com/share/1HP4RdVbp3/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            title="Facebook"
+          >
+            <img src="images/facebook.png" alt="Facebook">
+          </a>
+          <a
+            href="https://www.tiktok.com/@chichenvibe?_r=1&_t=ZN-95t2irMStcJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok"
+            title="TikTok"
+          >
+            <img src="images/tiktok.png" alt="TikTok">
+          </a>
+          <a
+            href="https://www.instagram.com/chichenvibe?utm_source=qr&igsh=MXkybmg1bXA3Mm9oYw=="
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            title="Instagram"
+          >
+            <img src="images/instagram.png" alt="Instagram">
+          </a>
+        </nav>
+      </div>
+
+      <!-- Colonne 2 : Navigation -->
+      <nav class="footer-nav" aria-label="Navigation secondaire">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="monuments.html">Monuments</a></li>
+          <li><a href="unesco.html">UNESCO</a></li>
+          <li><a href="parcours.html">Parcours</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+        </ul>
+      </nav>
+
+      <!-- Colonne 3 : Localisation -->
+      <div class="footer-location">
+        <h3>Localisation</h3>
+        <address>Chichén Itzá, Yucatán, Mexique</address>
+        <a
+          href="https://maps.google.com/?q=Chichen+Itza"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="map-link"
+          aria-label="Voir Chichén Itzá sur Google Maps (nouvelle fenêtre)"
+        >
+          📍 Yucatán, Mexique
+        </a>
+      </div>
+
+    </div><!-- /footer-top -->
+
+    <!-- Bas du footer -->
+    <div class="footer-bottom">
+
+      <p class="footer-copy">
+        © 2026 Chichen Vibe &nbsp;•&nbsp;
+        <span class="heritage">Patrimoine Mondial de l'Humanité</span>
+      </p>
+
+      <p class="footer-unesco-text">
+        En partenariat avec l'UNESCO pour la préservation du patrimoine mondial.
+        Chichén Itzá, l'une des 7 nouvelles merveilles du monde.
+      </p>
+
+      <div class="footer-badges">
+        <span class="badge badge-blue">UNESCO World Heritage</span>
+        <span class="badge badge-gold">New Wonder of the World</span>
+      </div>
+
+      <!-- Logo MCN -->
+      <div class="mcn-logo">
+        <img src="images/MCN.jpg" alt="Logo M.C.N. — Médiation Culturelle et Numérique" class="mcn-img">
+      </div>
+
+    </div><!-- /footer-bottom -->
+
+  </footer>
+
+  <!-- Bouton retour en haut de page -->
+  <button class="scroll-top" id="scroll-top-btn" aria-label="Retour en haut de page" title="Retour en haut">↑</button>
+
+  <!-- ══════════════════════════════════════════
+       MODALES — "EN SAVOIR PLUS"
+  ══════════════════════════════════════════ -->
+
+  <!-- MODALE 1 : La Civilisation Maya -->
+  <div id="modal-civ" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-civ-titre">
+    <div class="modal-box">
+      <div class="modal-close">
+        <button onclick="closeModal('modal-civ')" aria-label="Fermer la fenêtre">✕</button>
+      </div>
+      <div class="modal-content">
+        <h3 id="modal-civ-titre">La Civilisation Maya</h3>
+        <div class="modal-section">
+          <div class="modal-section-title">📖 Aperçu</div>
+          <p>Fondée vers 600 après J.-C., Chichén Itzá était une cité maya puissante qui combinait architecture, astronomie et spiritualité. La civilisation maya était reconnue pour ses connaissances avancées en mathématiques, astronomie et architecture.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">📜 Histoire Approfondie</div>
+          <p>Les Mayas ont établi Chichén Itzá comme l'une de leurs plus grandes cités entre 600 et 900 après J.-C., pendant la période classique tardive. La ville s'est développée autour d'un cénote sacré qui fournissait de l'eau douce à la population. Les Mayas de Chichén Itzá ont développé un système d'écriture hiéroglyphique sophistiqué, un calendrier extrêmement précis et des connaissances mathématiques avancées incluant le concept du zéro. Leur architecture monumentale témoigne d'une société hautement organisée avec une hiérarchie sociale complexe comprenant des prêtres, des nobles, des artisans et des agriculteurs. La cité servait de centre économique majeur, contrôlant les routes commerciales du sel, du cacao, de l'obsidienne et du jade à travers la péninsule du Yucatán.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">🌟 Impact Culturel</div>
+          <p>L'influence de Chichén Itzá s'étendait sur toute la région maya, servant de modèle architectural et culturel. La cité établissait des normes en matière d'urbanisme, d'art et de cérémonies religieuses qui ont été adoptées par d'autres sites mayas. Son système d'écriture et son calendrier ont été parmi les plus sophistiqués de Mésoamérique, influençant les générations futures.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">🔍 Découvertes Archéologiques</div>
+          <p>Les archéologues ont découvert des milliers d'artefacts à Chichén Itzá, incluant des céramiques finement décorées, des outils en obsidienne, des bijoux en jade et des sculptures en pierre. Des offrandes cérémonielles retrouvées dans le Cénote Sacré comprennent de l'or, du jade, des textiles et même des restes humains, témoignant de l'importance des rituels religieux. Les fouilles récentes ont révélé des structures enterrées sous les monuments principaux, suggérant plusieurs phases de construction s'étendant sur des siècles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALE 2 : Rôle Religieux et Astronomique -->
+  <div id="modal-relig" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-relig-titre">
+    <div class="modal-box">
+      <div class="modal-close">
+        <button onclick="closeModal('modal-relig')" aria-label="Fermer la fenêtre">✕</button>
+      </div>
+      <div class="modal-content">
+        <h3 id="modal-relig-titre">Rôle Religieux et Astronomique</h3>
+        <div class="modal-section">
+          <div class="modal-section-title">📖 Aperçu</div>
+          <p>Le site servait de centre religieux majeur avec des temples dédiés aux dieux mayas. Les Mayas utilisaient leurs constructions pour observer les équinoxes et solstices, démontrant leur maîtrise de l'astronomie.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">📜 Histoire Approfondie</div>
+          <p>Chichén Itzá était un centre spirituel où se déroulaient des cérémonies complexes dédiées à Kukulcán (le serpent à plumes), Chaac (le dieu de la pluie) et d'autres divinités mayas. Les prêtres-astronomes observaient les cieux depuis l'observatoire El Caracol, cartographiant les mouvements de Vénus, Mars et d'autres corps célestes avec une précision remarquable. Ces observations astronomiques guidaient le calendrier agricole et religieux, déterminant les moments propices pour les semailles, les récoltes et les cérémonies sacrées. Les équinoxes de printemps et d'automne étaient célébrés par des festivals massifs où des milliers de pèlerins affluaient pour assister au phénomène du serpent de lumière descendant El Castillo.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">🌟 Impact Culturel</div>
+          <p>Le rôle religieux de Chichén Itzá a transformé le site en destination de pèlerinage majeure dans le monde maya. Les rituels pratiqués ici ont influencé les pratiques religieuses dans toute la Mésoamérique, établissant des traditions qui ont perduré pendant des siècles après le déclin de la ville.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">🔍 Découvertes Archéologiques</div>
+          <p>Des découvertes archéologiques ont révélé des autels de sacrifice, des encensoirs élaborés et des peintures murales représentant des cérémonies religieuses. Le Cénote Sacré a livré des milliers d'objets votifs, confirmant son rôle central dans les rituels de pluie et de fertilité. Des inscriptions hiéroglyphiques décrivent des cérémonies spécifiques et nomment les prêtres qui les dirigeaient.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALE 3 : Centre Politique -->
+  <div id="modal-polit" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-polit-titre">
+    <div class="modal-box">
+      <div class="modal-close">
+        <button onclick="closeModal('modal-polit')" aria-label="Fermer la fenêtre">✕</button>
+      </div>
+      <div class="modal-content">
+        <h3 id="modal-polit-titre">Centre Politique</h3>
+        <div class="modal-section">
+          <div class="modal-section-title">📖 Aperçu</div>
+          <p>Entre le Xe et le XIIe siècle, Chichén Itzá était l'une des plus grandes villes de la région, servant de centre politique et économique majeur de la civilisation maya.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">📜 Histoire Approfondie</div>
+          <p>Vers 900 après J.-C., Chichén Itzá est entrée dans une période de grande prospérité politique et économique, devenant la capitale d'un vaste royaume qui contrôlait une grande partie du nord du Yucatán. Les dirigeants de Chichén Itzá ont établi des alliances commerciales et politiques avec d'autres cités mayas et avec des peuples de la côte du Golfe du Mexique. Le système politique était complexe, probablement gouverné par un conseil de nobles plutôt qu'un seul roi, comme en témoignent les représentations de multiples dirigeants dans l'art et l'architecture. La cité contrôlait les sources de sel, une ressource vitale pour la préservation des aliments, ainsi que les routes commerciales du cacao, considéré comme une monnaie d'échange. Cette puissance économique a permis à Chichén Itzá de maintenir une armée forte et d'influencer les affaires politiques de toute la région pendant plusieurs siècles.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">🌟 Impact Culturel</div>
+          <p>Le modèle politique de Chichén Itzá, basé sur des alliances et le commerce plutôt que sur la conquête pure, a créé un réseau d'influence s'étendant sur des centaines de kilomètres. Ce système a permis une période de paix relative et de prospérité dans le nord du Yucatán pendant près de deux siècles.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">🔍 Découvertes Archéologiques</div>
+          <p>Les archéologues ont découvert des stèles et des monuments commémoratifs décrivant des alliances politiques et des victoires militaires. Des analyses récentes des inscriptions ont révélé des noms de dirigeants et leurs dates de règne, permettant de reconstruire l'histoire politique de la cité. Des artefacts importés de régions lointaines témoignent de l'étendue des relations commerciales et diplomatiques.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALE 4 : Périodes de Construction -->
+  <div id="modal-const" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-const-titre">
+    <div class="modal-box">
+      <div class="modal-close">
+        <button onclick="closeModal('modal-const')" aria-label="Fermer la fenêtre">✕</button>
+      </div>
+      <div class="modal-content">
+        <h3 id="modal-const-titre">Périodes de Construction</h3>
+        <div class="modal-section">
+          <div class="modal-section-title">📖 Aperçu</div>
+          <p>La construction s'est déroulée en plusieurs phases, mélangeant les styles architecturaux maya et toltèque, créant un site unique qui témoigne des échanges culturels de l'époque.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">📜 Histoire Approfondie</div>
+          <p>La construction monumentale à Chichén Itzá s'est étalée sur plusieurs siècles, avec au moins trois phases majeures identifiables. La première phase (600-800 après J.-C.) a vu la construction de structures dans le style Puuc typiquement maya, avec des façades richement décorées de motifs géométriques. La deuxième phase (900-1000 après J.-C.) marque l'arrivée d'influences toltèques du centre du Mexique, résultant en un style architectural hybride unique. Cette période a vu la construction d'El Castillo, du Temple des Guerriers et du Grand Terrain de Jeu de Balle. La troisième phase (1000-1200 après J.-C.) a vu des modifications et des ajouts aux structures existantes. Les Mayas ont démontré des compétences d'ingénierie remarquables, construisant sans outils métalliques ni roues, utilisant uniquement des outils de pierre, des cordes et une main-d'œuvre organisée. Les bâtiments étaient orientés selon des alignements astronomiques précis, et l'acoustique du site était soigneusement calculée, comme en témoigne l'écho remarquable du Grand Terrain de Jeu de Balle.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">🌟 Impact Culturel</div>
+          <p>Les techniques de construction développées à Chichén Itzá ont influencé l'architecture dans toute la Mésoamérique. Le style architectural hybride maya-toltèque est devenu un modèle pour d'autres sites, démontrant la possibilité d'intégrer différentes traditions culturelles dans une synthèse cohérente et impressionnante.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">🔍 Découvertes Archéologiques</div>
+          <p>Les études architecturales modernes utilisant le radar à pénétration de sol ont révélé que de nombreux monuments actuellement visibles ont été construits par-dessus des structures plus anciennes. Des tunnels d'exploration ont permis d'accéder à des pyramides enfouies à l'intérieur d'El Castillo, offrant des aperçus fascinants des techniques de construction mayas. Des analyses chimiques des mortiers et enduits ont aidé à dater les différentes phases de construction.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       JAVASCRIPT
+  ══════════════════════════════════════════ -->
+  <script>
+
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mainNav      = document.getElementById('main-nav');
+
+    hamburgerBtn.addEventListener('click', () => {
+      const isOpen = mainNav.classList.toggle('open');
+      hamburgerBtn.classList.toggle('is-open', isOpen);
+      hamburgerBtn.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!hamburgerBtn.contains(e.target) && !mainNav.contains(e.target)) {
+        mainNav.classList.remove('open');
+        hamburgerBtn.classList.remove('is-open');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    function openModal(id) {
+      const overlay = document.getElementById(id);
+      if (!overlay) return;
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      overlay.addEventListener('click', function onOverlayClick(e) {
+        if (e.target === overlay) {
+          closeModal(id);
+          overlay.removeEventListener('click', onOverlayClick);
+        }
+      });
+      const onEscape = (e) => {
+        if (e.key === 'Escape') {
+          closeModal(id);
+          document.removeEventListener('keydown', onEscape);
+        }
+      };
+      document.addEventListener('keydown', onEscape);
+      const closeBtn = overlay.querySelector('.modal-close button');
+      if (closeBtn) closeBtn.focus();
+    }
+
+    function closeModal(id) {
+      const overlay = document.getElementById(id);
+      if (!overlay) return;
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function toggleExpand(btn) {
+      const fullContent = btn.previousElementSibling;
+      if (!fullContent || !fullContent.classList.contains('timeline-full-content')) return;
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+      if (isExpanded) {
+        fullContent.classList.remove('expanded');
+        fullContent.setAttribute('aria-hidden', 'true');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.textContent = 'Lire la suite ↓';
+      } else {
+        fullContent.classList.add('expanded');
+        fullContent.setAttribute('aria-hidden', 'false');
+        btn.setAttribute('aria-expanded', 'true');
+        btn.textContent = 'Réduire ↑';
+      }
+    }
+
+    const scrollTopBtn = document.getElementById('scroll-top-btn');
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    });
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+  </script>
+
+</body>
+</html>
