@@ -91,7 +91,7 @@ Le projet a été réalisé en groupe de 3 personnes. Chaque membre a contribué
 - Menu hamburger mobile : ouverture/fermeture, animation des barres, gestion de l'attribut `aria-expanded`
 - Fermeture automatique du menu au clic en dehors de la zone
 
-
+---
 
 ### 👤 Rémy MARCELS — Design & Page Histoire (cartes thématiques)
 
@@ -105,7 +105,7 @@ Le projet a été réalisé en groupe de 3 personnes. Chaque membre a contribué
 - Fonctions `openModal()` et `closeModal()` : affichage des modales, blocage du scroll, fermeture au clic sur le fond et à la touche Échap
 - Gestion du focus accessibilité sur le bouton de fermeture
 
-
+---
 
 ### 👤 Nayas AHAMEDSAH — Chronologie & Responsive
 
@@ -119,6 +119,7 @@ Le projet a été réalisé en groupe de 3 personnes. Chaque membre a contribué
 - Fonction `toggleExpand()` : affichage progressif du contenu des cartes de la chronologie (Lire la suite / Réduire)
 - Bouton "retour en haut" : détection du scroll et animation d'apparition
 
+---
 
 ## 🚀 Améliorations possibles
 
