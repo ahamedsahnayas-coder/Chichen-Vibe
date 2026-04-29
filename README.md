@@ -91,7 +91,7 @@ Le projet a été réalisé en groupe de 3 personnes. Chaque membre a contribué
 - Menu hamburger mobile : ouverture/fermeture, animation des barres, gestion de l'attribut `aria-expanded`
 - Fermeture automatique du menu au clic en dehors de la zone
 
----
+
 
 ### 👤 Rémy MARCELS — Design & Page Histoire (cartes thématiques)
 
@@ -105,7 +105,7 @@ Le projet a été réalisé en groupe de 3 personnes. Chaque membre a contribué
 - Fonctions `openModal()` et `closeModal()` : affichage des modales, blocage du scroll, fermeture au clic sur le fond et à la touche Échap
 - Gestion du focus accessibilité sur le bouton de fermeture
 
----
+
 
 ### 👤 Nayas AHAMEDSAH — Chronologie & Responsive
 
@@ -126,11 +126,13 @@ Le projet a été réalisé en groupe de 3 personnes. Chaque membre a contribué
 - **Version anglaise fonctionnelle** — Le sélecteur de langue FR/EN est présent dans le header mais le site est uniquement disponible en français pour le moment
 - **Améliorer les animations** — Ajouter des transitions d'entrée (scroll animations, fade-in) pour dynamiser la navigation
 
+---
 
 ## 🎓 AUTEUR : Millan LECHAR, Rémy MARCELS, Nayas AHAMEDSAH
 
 Projet réalisé dans le cadre du **BUT 1 Informatique**
 Université Gustave Eiffel — Année universitaire 2025-2026
 
+---
 
 *Site consacré à Chichén Itzá — Patrimoine Mondial de l'UNESCO 🏛️*
