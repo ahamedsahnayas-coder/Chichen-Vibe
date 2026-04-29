@@ -1,5 +1,7 @@
 # 🏛️ Chichen Vibe — Site Web Touristique
 
+---
+
 ## 📌 Présentation du projet
 
 **Chichen Vibe** est un site web touristique dédié au site archéologique de **Chichén Itzá**, situé dans la péninsule du Yucatán au Mexique. Ce lieu, classé au **Patrimoine Mondial de l'UNESCO** et élu l'une des **7 Nouvelles Merveilles du Monde**, est présenté à travers plusieurs pages riches en contenu historique et visuel.
@@ -9,6 +11,7 @@ L'objectif de ce projet était de **transformer une maquette Figma en un site we
 ⚠️ **Projet en cours de développement** — Seules deux pages HTML ont été réalisées pour le moment (`index.html` et `histoire.html`). Les autres pages prévues dans la navigation (Monuments, UNESCO, Parcours, Galerie, Accès) seront développées ultérieurement.  
 Le site est actuellement **disponible uniquement en français**. Une version anglaise est prévue mais pas encore implémentée.
 
+---
 
 ## 🛠️ Technologies utilisées
 
@@ -19,6 +22,7 @@ Le site est actuellement **disponible uniquement en français**. Une version ang
 
 Aucun framework ni bibliothèque externe n'a été utilisé. Le site est entièrement développé en HTML/CSS/JS natif.
 
+---
 
 ## 📁 Structure du projet
 
@@ -46,6 +50,8 @@ chichen-vibe/
     └── ...
 ```
 
+---
+
 ### Détail des fichiers principaux
 
 - **`index.html`** — Page d'accueil avec un hero plein écran (image de fond, titre, badge UNESCO, bouton vers le site officiel).
@@ -66,13 +72,14 @@ chichen-vibe/
 - **Bouton retour en haut** — Apparaît après 400px de défilement
 - **Sélecteur de langue FR / EN** — Présent dans le header (interface prête, traduction non encore implémentée — site disponible en français uniquement)
 
+---
 
 ## 👥 Répartition du travail
 
 Le projet a été réalisé en groupe de 3 personnes. Chaque membre a contribué à la fois à la partie HTML/CSS et à la partie JavaScript.
 
 
-### 👤 LECHAR Millan 1 — Structure & Page d'accueil
+### 👤 Millan LECHAR 1 — Structure & Page d'accueil
 
 **HTML/CSS :**
 - Création de la structure globale du site (header, footer, balises sémantiques)
@@ -86,7 +93,7 @@ Le projet a été réalisé en groupe de 3 personnes. Chaque membre a contribué
 
 ---
 
-### 👤 MARCELS Rémy — Design & Page Histoire (cartes thématiques)
+### 👤 Rémy MARCELS — Design & Page Histoire (cartes thématiques)
 
 **HTML/CSS :**
 - Développement de la section "4 cartes thématiques" dans `histoire.html`
@@ -100,7 +107,7 @@ Le projet a été réalisé en groupe de 3 personnes. Chaque membre a contribué
 
 ---
 
-### 👤 AHAMEDSAH Nayas — Chronologie & Responsive
+### 👤 Nayas AHAMEDSAH — Chronologie & Responsive
 
 **HTML/CSS :**
 - Développement de la section chronologie dans `histoire.html` (7 entrées timeline)
