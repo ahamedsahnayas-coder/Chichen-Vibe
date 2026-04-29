@@ -7,13 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chichen Vibe — Accueil</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-  <!-- ══════════════════════════════════════════
-       HEADER (commun à toutes les pages)
-  ══════════════════════════════════════════ -->
+  <!-- HEADER (commun à toutes les pages) -->
   <header>
 
     <!-- Logo -->
@@ -25,7 +23,7 @@
       </div>
     </a>
 
-    <!-- Navigation principale (7 liens — toutes les pages) -->
+    <!-- Navigation principale -->
     <nav id="main-nav" aria-label="Navigation principale">
       <a href="index.html"    class="active">Accueil</a>
       <a href="histoire.html"              >Histoire</a>
@@ -58,17 +56,12 @@
 
   </header>
 
-  <!-- ══════════════════════════════════════════
-       MAIN — PAGE ACCUEIL
-  ══════════════════════════════════════════ -->
+  <!-- PAGE ACCUEIL -->
   <main>
 
-    <!-- HERO ───────────────────────────────────
-         Image de fond : images/castillo.jpg
-    ─────────────────────────────────────────── -->
+    <!-- Image de fond : images/castillo.jpg -->
     <section class="hero" aria-label="Section hero Chichen Vibe">
 
-      <!-- Image de fond principale -->
       <div
         class="hero-bg"
         role="img"
@@ -76,7 +69,6 @@
         style="background-image: url('images/castillo.jpg');"
       ></div>
 
-      <!-- Contenu centré du hero -->
       <div class="hero-content">
 
         <!-- Badge UNESCO / Merveille du Monde -->
@@ -84,16 +76,12 @@
           UNESCO WORLD HERITAGE SITE &nbsp;•&nbsp; MERVEILLE DU MONDE
         </div>
 
-        <!-- Titre principal -->
         <h1 class="hero-title">Chichen Vibe</h1>
 
-        <!-- Séparateur doré -->
         <div class="hero-divider" aria-hidden="true"></div>
 
-        <!-- Sous-titre -->
         <p class="hero-subtitle">Explorez l'âme de Chichén Itzá</p>
 
-        <!-- Métadonnées : localisation + période -->
         <div class="hero-meta">
           <div class="hero-meta-item">
             <span class="icon" aria-hidden="true">📍</span>
@@ -105,7 +93,7 @@
           </div>
         </div>
 
-        <!-- Bouton Site Officiel -->
+        <!-- Bouton site officiel -->
         <a
           href="https://whc.unesco.org/fr/list/483/"
           target="_blank"
@@ -122,9 +110,7 @@
 
   </main>
 
-  <!-- ══════════════════════════════════════════
-       FOOTER (commun à toutes les pages)
-  ══════════════════════════════════════════ -->
+  <!-- FOOTER (commun à toutes les pages) -->
   <footer>
 
     <div class="footer-top">
@@ -140,7 +126,7 @@
         </a>
         <p class="tagline">Explorez l'âme de Chichén Itzá</p>
 
-        <!-- Réseaux sociaux — logos PNG -->
+        <!-- Réseaux sociaux - logos PNG -->
         <nav class="social-links" aria-label="Réseaux sociaux">
           <a
             href="https://www.facebook.com/share/1HP4RdVbp3/"
@@ -200,7 +186,7 @@
         </a>
       </div>
 
-    </div><!-- /footer-top -->
+    </div>
 
     <!-- Bas du footer -->
     <div class="footer-bottom">
@@ -217,8 +203,8 @@
 
       <!-- Badges UNESCO + New Wonder -->
       <div class="footer-badges">
-        <span class="badge badge-blue">UNESCO World Heritage</span>
-        <span class="badge badge-gold">New Wonder of the World</span>
+        <span class="badge badge-blue">Patrimoine mondiale de l'UNESCO</span>
+        <span class="badge badge-gold">Nouvelle merveille du monde</span>
       </div>
 
       <!-- Logo MCN -->
@@ -230,7 +216,7 @@
         >
       </div>
 
-    </div><!-- /footer-bottom -->
+    </div>
 
   </footer>
 
@@ -243,40 +229,6 @@
   >
     ↑
   </button>
-
-  <!-- ══════════════════════════════════════════
-       JAVASCRIPT
-  ══════════════════════════════════════════ -->
-  <script>
-
-    const hamburgerBtn = document.getElementById('hamburger-btn');
-    const mainNav      = document.getElementById('main-nav');
-
-    hamburgerBtn.addEventListener('click', () => {
-      const isOpen = mainNav.classList.toggle('open');
-      hamburgerBtn.classList.toggle('is-open', isOpen);
-      hamburgerBtn.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    document.addEventListener('click', (e) => {
-      if (!hamburgerBtn.contains(e.target) && !mainNav.contains(e.target)) {
-        mainNav.classList.remove('open');
-        hamburgerBtn.classList.remove('is-open');
-        hamburgerBtn.setAttribute('aria-expanded', 'false');
-      }
-    });
-
-    const scrollTopBtn = document.getElementById('scroll-top-btn');
-
-    window.addEventListener('scroll', () => {
-      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
-    });
-
-    scrollTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-  </script>
 
 </body>
 </html>
