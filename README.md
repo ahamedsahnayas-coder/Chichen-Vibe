@@ -16,17 +16,18 @@ Le site est actuellement **disponible uniquement en français**. Une version ang
 ## 🚀 Consulter mon Portfolio
 
 Mon projet est hébergé en ligne pour une consultation immédiate :  
-👉 **[Cliquer ici pour voir le site en ligne](https://ahamedsahnayas-coder.github.io/chichen-vibe/)**
+👉 **[Cliquer ici pour voir le site en ligne](https://ahamedsahnayas-coder.github.io/Chichen-Vibe/)**
 
 Ou bien via le terminal (bash) :
 
-
+```
 bash
-git clone https://github.com/ahamedsahnayas-coder/portfolio.git
+git clone https://github.com/ahamedsahnayas-coder/Chichen-Vibe.git
 
-cd portfolio
+cd Chichen-Vibe
 
 # Windows : start index.html | Mac : open index.html | Linux : xdg-open index.html
+```
 
 ---
 
