@@ -13,6 +13,23 @@ Le site est actuellement **disponible uniquement en français**. Une version ang
 
 ---
 
+## 🚀 Consulter mon Portfolio
+
+Mon projet est hébergé en ligne pour une consultation immédiate :  
+👉 **[Cliquer ici pour voir le site en ligne](https://ahamedsahnayas-coder.github.io/chichen-vibe/)**
+
+Ou bien via le terminal (bash) :
+
+
+bash
+git clone https://github.com/ahamedsahnayas-coder/portfolio.git
+
+cd portfolio
+
+# Windows : start index.html | Mac : open index.html | Linux : xdg-open index.html
+
+---
+
 ## 🛠️ Technologies utilisées
 
 | Technologie | Utilisation |
@@ -79,27 +96,26 @@ chichen-vibe/
 Le projet a été réalisé en groupe de 3 personnes. Chaque membre a contribué à la fois à la partie HTML/CSS et à la partie JavaScript.
 
 
-### 👤 Millan LECHAR 1 — Structure & Page d'accueil
+### 👤 Millan LECHAR — Structure & Intégration HTML
 
 **HTML/CSS :**
 - Création de la structure globale du site (header, footer, balises sémantiques)
-- Développement de la page `index.html` : section hero, badge UNESCO, bouton officiel
-- Mise en page du header (logo, navigation, sélecteur de langue)
-- Styles CSS associés : `.hero`, `.hero-bg`, `.hero-content`, `.hero-btn`, `.header`
+- Développement de la page `index.html` (hero, badge UNESCO, bouton officiel)
+- Mise en place du header (logo, navigation, sélecteur de langue, bouton hamburger)
+- Contribution CSS ciblée sur les composants développés
 
 **JavaScript :**
 - Menu hamburger mobile : ouverture/fermeture, animation des barres, gestion de l'attribut `aria-expanded`
-- Fermeture automatique du menu au clic en dehors de la zone
+- Fermeture automatique du menu au clic en dehors de la zone de navigation
 
 ---
 
-### 👤 Rémy MARCELS — Design & Page Histoire (cartes thématiques)
+### 👤 Nayas AHAMEDSAH — Design CSS & Mise en Forme
 
 **HTML/CSS :**
-- Développement de la section "4 cartes thématiques" dans `histoire.html`
+- Développement de la section "4 cartes thématiques" et des modales dans `histoire.html`
 - Intégration du hero de la page Histoire (titre, divider, badge)
-- Création et stylisation des 4 modales "En savoir plus"
-- Styles CSS associés : `.histoire-card`, `.cards-grid`, `.card-img-wrap`, `.modal-overlay`, `.modal-box`, `.modal-content`
+- Travail CSS approfondi : palette de couleurs, typographies, variables CSS, composants visuels et footer
 
 **JavaScript :**
 - Fonctions `openModal()` et `closeModal()` : affichage des modales, blocage du scroll, fermeture au clic sur le fond et à la touche Échap
@@ -107,17 +123,12 @@ Le projet a été réalisé en groupe de 3 personnes. Chaque membre a contribué
 
 ---
 
-### 👤 Nayas AHAMEDSAH — Chronologie & Responsive
+### 👤 Rémy MARCELS — Chronologie, Responsive & Footer
 
 **HTML/CSS :**
 - Développement de la section chronologie dans `histoire.html` (7 entrées timeline)
 - Mise en page du footer commun (colonnes, badges, réseaux sociaux, logo MCN)
 - Intégration du responsive design complet (media queries mobile et tablette)
-- Styles CSS associés : `.timeline`, `.timeline-entry`, `.timeline-card`, `.footer-top`, `.footer-bottom`, `@media`
-
-**JavaScript :**
-- Fonction `toggleExpand()` : affichage progressif du contenu des cartes de la chronologie (Lire la suite / Réduire)
-- Bouton "retour en haut" : détection du scroll et animation d'apparition
 
 ---
 
