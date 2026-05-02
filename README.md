@@ -47,13 +47,13 @@ Aucun framework ni bibliothèque externe n'a été utilisé. Le site est entièr
 ```
 chichen-vibe/
 │
-├── index.html        → ✅ Page d'accueil (réalisée)
-├── histoire.html     → ✅ Page Histoire (réalisée)
-├── monuments.html    → 🔜 Page Monuments (prévue)
-├── unesco.html       → 🔜 Page UNESCO (prévue)
-├── parcours.html     → 🔜 Page Parcours (prévue)
-├── galerie.html      → 🔜 Page Galerie (prévue)
-├── acces.html        → 🔜 Page Accès (prévue)
+├── index.html        → Page d'accueil ✅
+├── histoire.html     → Page Histoire ✅
+├── monuments.html    → Page Monuments (prévue)
+├── unesco.html       → Page UNESCO (prévue)
+├── parcours.html     → Page Parcours (prévue)
+├── galerie.html      → Page Galerie (prévue)
+├── acces.html        → Page Accès (prévue)
 │
 ├── styles.css        → Feuille de style principale (design complet du site)
 ├── script.js         → Fichier JavaScript (interactions et comportements)
@@ -148,4 +148,4 @@ Université Gustave Eiffel — Année universitaire 2025-2026
 
 ---
 
-*Site consacré à Chichén Itzá — Patrimoine Mondial de l'UNESCO 🏛️*
+*Site consacré à Chichén Itzá — Patrimoine Mondial de l'UNESCO*
